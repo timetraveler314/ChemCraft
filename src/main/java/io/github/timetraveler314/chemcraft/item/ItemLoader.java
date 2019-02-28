@@ -13,11 +13,13 @@ public class ItemLoader
 {
     public static Item testCube = new ItemTestCube();
     public static Item testCubeH2O = new ItemTestCubeH2O();
+    public static Item dustTinySalt = new ItemDustTinySalt();
 
     public ItemLoader(FMLPreInitializationEvent event)
     {
         register(testCube, "test_cube");
         register(testCubeH2O, "test_cube_h2o");
+        register(dustTinySalt, "dust_tiny_salt");
     }
 
     @SideOnly(Side.CLIENT)
@@ -25,6 +27,7 @@ public class ItemLoader
     {
         registerRender(testCube);
         registerRender(testCubeH2O);
+        registerRender(dustTinySalt);
     }
 
     private static void register(Item item, String name)

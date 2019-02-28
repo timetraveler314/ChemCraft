@@ -17,6 +17,7 @@ public class CommonProxy
         new CreativeTabsLoader(event);
         new ItemLoader(event);
         new BlockLoader(event);
+        new OreDictionaryLoader(event);
     }
 
     public void init(FMLInitializationEvent event)
