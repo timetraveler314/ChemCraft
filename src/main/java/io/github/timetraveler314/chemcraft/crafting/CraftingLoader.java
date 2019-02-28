@@ -20,7 +20,7 @@ public class CraftingLoader
     private static void registerRecipe()
     {
         /* test cube */
-        GameRegistry.addShapedRecipe(new ResourceLocation("testCube"), new ResourceLocation("ins"), new ItemStack(ItemLoader.testCube, 3), new Object[]{" # ", "* *", " * ", '#', Blocks.PLANKS, '*', Blocks.GLASS_PANE});
+        GameRegistry.addShapedRecipe(new ResourceLocation("testCube"), new ResourceLocation("ins"), new ItemStack(ItemLoader.testCube, 3), new Object[]{" # ", "* *", " * ", '#', "plankWood", '*', "paneGlass"});
         /* test cube fill water */
         //GameRegistry.addShapedRecipe(new ResourceLocation("testCubeH2O"));
     }
@@ -28,6 +28,7 @@ public class CraftingLoader
     private static void registerSmelting()
     {
         GameRegistry.addSmelting(ItemLoader.testCubeH2O, new ItemStack(ItemLoader.testCube), 0.0F);
+        GameRegistry.addSmelting(Items.WATER_BUCKET, new ItemStack(ItemLoader.dustTinySalt), 0.0F);
     }
 
     private static void registerFuel()

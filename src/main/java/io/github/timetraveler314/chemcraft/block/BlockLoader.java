@@ -23,7 +23,7 @@ public class BlockLoader {
     public static Block saltEvaporator = new BlockSaltEvaporator();
 
     public BlockLoader(FMLPreInitializationEvent event) {
-        register(saltEvaporator, (ItemBlock) ItemBlock.getItemFromBlock(saltEvaporator), "salt_evaporator");
+        register(saltEvaporator, "salt_evaporator");
     }
 
     @SideOnly(Side.CLIENT)
@@ -32,10 +32,10 @@ public class BlockLoader {
         registerRender(saltEvaporator);
     }
 
-    private static void register(Block block, ItemBlock itemBlock, String name) {
+    private static void register(Block block, String name) {
         ForgeRegistries.BLOCKS.register(block.setRegistryName(name));
-        ForgeRegistries.ITEMS.register(itemBlock.setRegistryName(name));
-        GameData.getBlockItemMap().put(block, itemBlock);
+        //ForgeRegistries.ITEMS.register(itemBlock.setRegistryName(name));
+        //GameData.getBlockItemMap().put(block, itemBlock);
     }
 
     @SideOnly(Side.CLIENT)
