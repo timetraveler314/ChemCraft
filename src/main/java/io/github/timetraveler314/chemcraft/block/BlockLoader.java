@@ -23,16 +23,7 @@ public class BlockLoader {
     public static Block saltEvaporator = new BlockSaltEvaporator();
 
     public BlockLoader(FMLPreInitializationEvent event) {
-        register(saltEvaporator, "salt_evaporator");
-        register(saltEvaporator, new ItemMultiTexture(saltEvaporator, saltEvaporator, new Function<ItemStack, String>()
-        {
-            @Override
-            public String apply(ItemStack input)
-            {
-                return BlockSaltEvaporator.EnumMaterial.values()[input.getMetadata() >> 3].getName();
-            }
-        }), "metal_furnace");
-        new ItemMultiTexture(saltEvaporator,saltEvaporator,);
+        register(saltEvaporator, (ItemBlock) ItemBlock.getItemFromBlock(saltEvaporator), "salt_evaporator");
     }
 
     @SideOnly(Side.CLIENT)
