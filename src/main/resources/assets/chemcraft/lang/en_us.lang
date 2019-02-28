@@ -1,0 +1,5 @@
+item.testCube.name=Test Cube (Empty)
+item.testCubeH2O.name=Test Cube (H2O)
+item.dustTinySalt.name=Tiny Salt Dust
+
+itemGroup.chemcraft=ChemCraft

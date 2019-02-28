@@ -1,0 +1,5 @@
+item.testCube.name=试管(空)
+item.testCubeH2O.name=试管(H2O)
+item.dustTinySalt.name=小撮盐
+
+itemGroup.chemcraft=ChemCraft
