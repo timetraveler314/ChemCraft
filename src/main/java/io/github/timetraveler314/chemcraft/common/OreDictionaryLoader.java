@@ -12,7 +12,7 @@ public class OreDictionaryLoader
 {
     public OreDictionaryLoader(FMLPreInitializationEvent event)
     {
-        registerItem("dustTinySalt", ItemLoader.testCubeH2O);
+        registerItem("dustTinySalt", ItemLoader.dustTinySalt);
     }
 
     public void registerItem (String name, Item item) {
