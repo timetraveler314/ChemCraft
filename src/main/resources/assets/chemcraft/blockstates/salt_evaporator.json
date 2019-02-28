@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "chemcraft:salt_evaporator" }
+  }
+}

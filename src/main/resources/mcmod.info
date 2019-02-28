@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chemcraft",
+  "name": "ChemCraft",
+  "description": "ChemCraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["timetraveler314"],
+  "credits": "timetraveler314",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
