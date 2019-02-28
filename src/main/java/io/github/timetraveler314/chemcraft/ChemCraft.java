@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
- * @author ustc_zzzz
+ * @author timetraveler314 & ustc_zzzz
  */
 @Mod(modid = ChemCraft.MODID, name = ChemCraft.NAME, version = ChemCraft.VERSION, acceptedMinecraftVersions = "1.12.2")
 public class ChemCraft
