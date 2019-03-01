@@ -21,20 +21,23 @@ import java.util.function.Function;
 
 public class BlockLoader {
     public static Block saltEvaporator = new BlockSaltEvaporator();
+    public static Block oreSalt = new BlockOreSalt();
 
     public BlockLoader(FMLPreInitializationEvent event) {
         register(saltEvaporator, "salt_evaporator");
+        register(oreSalt, "ore_salt");
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRenders()
     {
         registerRender(saltEvaporator);
+        registerRender(oreSalt);
     }
 
     private static void register(Block block, String name) {
         ForgeRegistries.BLOCKS.register(block.setRegistryName(name));
-        //ForgeRegistries.ITEMS.register(itemBlock.setRegistryName(name));
+        ForgeRegistries.ITEMS.register(new ItemBlock(block).setRegistryName(name));
         //GameData.getBlockItemMap().put(block, itemBlock);
     }
 

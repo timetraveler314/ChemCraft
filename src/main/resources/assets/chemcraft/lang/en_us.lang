@@ -2,4 +2,8 @@ item.testCube.name=Test Cube (Empty)
 item.testCubeH2O.name=Test Cube (H2O)
 item.dustTinySalt.name=Tiny Salt Dust
 
+item.oreSalt.name=Salt Ore
+
+tile.oreSalt.name=Salt Ore
+
 itemGroup.chemcraft=ChemCraft
