@@ -4,6 +4,7 @@ import io.github.timetraveler314.chemcraft.block.BlockLoader;
 import io.github.timetraveler314.chemcraft.crafting.CraftingLoader;
 import io.github.timetraveler314.chemcraft.creativetab.CreativeTabsChemCraft;
 import io.github.timetraveler314.chemcraft.creativetab.CreativeTabsLoader;
+import io.github.timetraveler314.chemcraft.worldgen.WorldGeneratorLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -18,6 +19,7 @@ public class CommonProxy
         new ItemLoader(event);
         new BlockLoader(event);
         new OreDictionaryLoader(event);
+        new WorldGeneratorLoader();
     }
 
     public void init(FMLInitializationEvent event)
