@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=east,working=false": { "model": "chemcraft:distillating_machine", "y": 90, "uvlock": true },
+    "facing=east,working=true": { "model": "chemcraft:distillating_machine_working", "y": 90, "uvlock": true },
+    "facing=north,working=false": { "model": "chemcraft:distillating_machine" },
+    "facing=north,working=true": { "model": "chemcraft:distillating_machine_working" },
+    "facing=south,working=false": { "model": "chemcraft:distillating_machine", "y": 180, "uvlock": true },
+    "facing=south,working=true,": { "model": "chemcraft:distillating_machine_working", "y": 180, "uvlock": true },
+    "facing=west,working=false": { "model": "chemcraft:distillating_machine", "y": 270, "uvlock": true },
+    "facing=west,working=true": { "model": "chemcraft:distillating_machine_working", "y": 270, "uvlock": true }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "chemcraft:blocks/machines/distillating_machine/side",
+    "front": "chemcraft:blocks/machines/distillating_machine/working",
+    "side": "chemcraft:blocks/machines/distillating_machine/side"
+  }
+}
