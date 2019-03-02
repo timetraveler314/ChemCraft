@@ -25,6 +25,10 @@ public class CraftingLoader
         GameRegistry.addShapedRecipe(new ResourceLocation("testCube"), new ResourceLocation("ins"), new ItemStack(ItemLoader.testCube, 3), new Object[]{" # ", "* *", " * ", '#', "plankWood", '*', "paneGlass"});
         /* test cube fill water */
         //GameRegistry.addShapedRecipe(new ResourceLocation("testCubeH2O"));
+        /* hollow glass tube */
+        GameRegistry.addShapedRecipe(new ResourceLocation("hollowGlassTube"), new ResourceLocation("ins"), new ItemStack(ItemLoader.hollowGlassTube, 3), new Object[]{"***", "* *", "***", '*', "paneGlass"});
+        // condense tube
+        GameRegistry.addShapedRecipe(new ResourceLocation("testCube"), new ResourceLocation("ins"), new ItemStack(ItemLoader.condensePipe, 1), new Object[]{"***", "*#*", "***", '#', ItemLoader.hollowGlassTube, '*', "blockGlass"});
     }
 
     private static void registerSmelting()

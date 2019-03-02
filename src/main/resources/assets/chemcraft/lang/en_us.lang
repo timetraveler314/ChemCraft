@@ -1,6 +1,8 @@
 item.testCube.name=Test Cube (Empty)
 item.testCubeH2O.name=Test Cube (H2O)
 item.dustTinySalt.name=Tiny Salt Dust
+item.condensePipe.name=Condense Pipe
+item.hollowGlassTube.anme=Hollow Glass Tube
 
 item.oreSalt.name=Salt Ore
 

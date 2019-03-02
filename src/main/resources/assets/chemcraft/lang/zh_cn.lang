@@ -1,6 +1,8 @@
 item.testCube.name=试管(空)
 item.testCubeH2O.name=试管(H2O)
 item.dustTinySalt.name=小撮盐
+item.condensePipe.name=冷凝管
+item.hollowGlassTube.name=中空玻璃管
 
 item.oreSalt.name=盐矿石
 
